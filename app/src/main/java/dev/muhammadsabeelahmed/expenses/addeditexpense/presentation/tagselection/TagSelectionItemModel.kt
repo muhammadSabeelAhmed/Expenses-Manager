@@ -1,0 +1,3 @@
+package dev.muhammadsabeelahmed.expenses.addeditexpense.presentation.tagselection
+
+interface TagSelectionItemModel

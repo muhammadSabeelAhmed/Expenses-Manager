@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerCurrencyAndAmount"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?colorPrimary"
+            android:theme="@style/ThemeOverlay.Expenses.Dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textSymbol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_24dp"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:textColor="?colorOnPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextAmount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextAmount"
+                tools:text="USD" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:hint="@string/amount"
+                android:inputType="numberDecimal"
+                android:theme="@style/ThemeOverlay.Expenses.EditText.Dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textSymbol"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTitle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/editTextTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editTextTitle"
+            app:srcCompat="@drawable/ic_title_24dp"
+            app:tint="@color/color_on_surface_emphasis_medium" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:hint="@string/title_hint"
+            android:inputType="textCapSentences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageTitle"
+            app:layout_constraintTop_toBottomOf="@id/containerCurrencyAndAmount" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTags"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/containerTags"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/containerTags"
+            app:srcCompat="@drawable/ic_local_24dp"
+            app:tint="@color/color_on_surface_emphasis_medium" />
+
+        <FrameLayout
+            android:id="@+id/containerTags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:background="?selectableItemBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageTags"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTitle">
+
+            <TextView
+                android:id="@+id/text_select_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/spacing_small"
+                android:paddingTop="@dimen/spacing_large"
+                android:paddingEnd="@dimen/spacing_small"
+                android:paddingBottom="@dimen/spacing_large"
+                android:text="@string/select_tags"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="@color/color_on_surface_emphasis_medium" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:paddingStart="@dimen/spacing_small"
+                android:paddingEnd="@dimen/spacing_small"
+                app:chipSpacing="@dimen/spacing_normal" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageDate"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textDate"
+            app:srcCompat="@drawable/ic_date_range_24dp"
+            app:tint="@color/color_on_surface_emphasis_medium" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xlarge"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:background="?selectableItemBackground"
+            android:paddingStart="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_large"
+            android:paddingEnd="@dimen/spacing_small"
+            android:paddingBottom="@dimen/spacing_large"
+            android:textAppearance="?textAppearanceSubtitle1"
+            android:textColor="@color/color_on_surface_emphasis_medium"
+            app:drawableEndCompat="@drawable/ic_arrow_drop_down_24dp"
+            app:drawableTint="@color/color_on_surface_emphasis_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageDate"
+            app:layout_constraintTop_toBottomOf="@id/containerTags"
+            tools:text="Sun, 27 May 19:30" />
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="@dimen/spacing_big"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_big"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:gravity="top"
+            android:hint="@string/notes_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,3 @@
+package dev.muhammadsabeelahmed.expenses.settings.presentation
+
+interface SettingItemModel
