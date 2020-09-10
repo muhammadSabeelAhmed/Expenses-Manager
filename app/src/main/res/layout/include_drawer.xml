@@ -52,26 +52,26 @@
                 tools:text="john.doe@expenses.com"
                 tools:visibility="visible" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/signUpOrSignInButton"
-                style="@style/Widget.Expenses.Button.Normal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/spacing_xlarge"
-                android:layout_marginEnd="@dimen/spacing_xlarge"
-                android:layout_marginBottom="@dimen/spacing_xlarge"
-                android:backgroundTint="?android:colorBackground"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:text="@string/sign_up_or_sign_in"
-                android:textColor="@color/color_on_surface_emphasis_high"
-                android:theme="@style/ThemeOverlay.Expenses.Light"
-                app:layout_constrainedWidth="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:visibility="invisible" />
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/signUpOrSignInButton"-->
+<!--                style="@style/Widget.Expenses.Button.Normal"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/spacing_xlarge"-->
+<!--                android:layout_marginEnd="@dimen/spacing_xlarge"-->
+<!--                android:layout_marginBottom="@dimen/spacing_xlarge"-->
+<!--                android:backgroundTint="?android:colorBackground"-->
+<!--                android:ellipsize="end"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="@string/sign_up_or_sign_in"-->
+<!--                android:textColor="@color/color_on_surface_emphasis_high"-->
+<!--                android:theme="@style/ThemeOverlay.Expenses.Light"-->
+<!--                app:layout_constrainedWidth="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                tools:visibility="invisible" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

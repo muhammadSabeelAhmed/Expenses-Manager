@@ -55,8 +55,6 @@
     <string name="no_tags">No hay etiquetas</string>
     <string name="notes_title">Notas</string>
     <string name="notes_hint">Notas (opcional)</string>
-    <string name="privacy">Privacidad</string>
-    <string name="privacy_policy">Política de privacidad</string>
     <string name="purchase_unavailable">Purchase unavailable</string>
     <string name="rate_app">Califica la app</string>
     <string name="rate_app_summary">Share with others if you like the app.</string>

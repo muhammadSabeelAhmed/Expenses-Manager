@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Final, top-level theme. -->
-    <style name="Theme.Expenses.DayNight" parent="Theme.Expenses.Dark"/>
+    <style name="Theme.Expenses.DayNight" parent="Theme.Expenses.Dark" />
 
     <style name="Theme.Expenses.Dark" parent="Theme.Expenses">
         <!-- Colors -->
@@ -17,7 +17,8 @@
 
         <item name="android:colorBackground">@color/background_dark</item>
         <item name="colorOnBackground">#FFFFFF</item>
-
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:navigationBarColor">@color/expenses_blue_dark</item>
         <item name="colorSurface">@color/background_dark_2dp</item>
         <item name="colorOnSurface">#FFFFFF</item>
     </style>

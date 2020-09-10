@@ -14,10 +14,10 @@
 
         <item name="colorSecondary">@color/expenses_red</item>
         <item name="colorOnSecondary">#FFFFFF</item>
-
+        <item name="android:windowDisablePreview">true</item>
         <item name="android:colorBackground">@color/background_light</item>
         <item name="colorOnBackground">#000000</item>
-
+        <item name="android:navigationBarColor">@color/expenses_blue_dark</item>
         <item name="colorSurface">@color/background_light_2dp</item>
         <item name="colorOnSurface">#000000</item>
 

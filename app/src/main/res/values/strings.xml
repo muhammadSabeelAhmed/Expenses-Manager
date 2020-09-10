@@ -57,8 +57,6 @@
     <string name="no_tags">No tags</string>
     <string name="notes_title">Notes</string>
     <string name="notes_hint">Notes (optional)</string>
-    <string name="privacy">Privacy</string>
-    <string name="privacy_policy">Privacy Policy</string>
     <string name="purchase_unavailable">Purchase unavailable</string>
     <string name="rate_app">Rate the app</string>
     <string name="rate_app_summary">Share with others if you like the app.</string>
@@ -90,4 +88,9 @@
     <string name="key_date_range" translatable="false">date_range</string>
     <string name="key_is_user_onboarded" translatable="false">is_user_onboarded</string>
     <string name="key_theme" translatable="false">theme</string>
+    <string name="title_first">First Name</string>
+    <string name="title_last">Last Name</string>
+    <string name="title_email">Email Address</string>
+    <string name="title_phone">Contact No.</string>
+    <string name="add_user">Onboard</string>
 </resources>

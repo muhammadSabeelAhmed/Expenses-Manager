@@ -40,7 +40,7 @@ class SettingsFragmentModel(
 
     private fun loadItemModels() {
         itemModels.value =
-            createAccountSection() + createApplicationSection() + createPrivacySection()
+           createApplicationSection() + createPrivacySection()
     }
 
     // Account section
@@ -139,22 +139,22 @@ class SettingsFragmentModel(
         val context = getApplication<Application>()
 
         val itemModels = mutableListOf<SettingItemModel>()
-        itemModels += createPrivacyHeader(context)
-        itemModels += createPrivacyPolicy(context)
+      //  itemModels += createPrivacyHeader(context)
+        //itemModels += createPrivacyPolicy(context)
 
         return itemModels
     }
 
-    private fun createPrivacyHeader(context: Context): SettingItemModel =
-        SettingsHeaderModel(context.getString(R.string.privacy))
-
-    private fun createPrivacyPolicy(context: Context): SettingItemModel {
-        val title = context.getString(R.string.privacy_policy)
-
-        return ActionSettingItemModel(title).apply {
-            click = { showActivity.next(PRIVACY_POLICY_URI) }
-        }
-    }
+//    private fun createPrivacyHeader(context: Context): SettingItemModel =
+//        SettingsHeaderModel(context.getString(R.string.privacy))
+//
+//    private fun createPrivacyPolicy(context: Context): SettingItemModel {
+//        val title = context.getString(R.string.privacy_policy)
+//
+//        return ActionSettingItemModel(title).apply {
+//            click = { showActivity.next(PRIVACY_POLICY_URI) }
+//        }
+//    }
     // Lifecycle end
 
     override fun onCleared() {

@@ -1,22 +1,27 @@
-# Expenses
+# Expenses Manager
+Application to manage monthly expenses and income with easy to use for any user.
 
-<a href="https://play.google.com/store/apps/details?id=dev.muhammadsabeelahmed.expenses">
-<img src="https://cdn.jsdelivr.net/gh/steverichey/google-play-badge-svg/img/en_get.svg" width="30%">
-</a>
 
-![Screens](resources/screens.png)
+## Questions
 
-# Download
+Hit me on Stackoverflow [![Stackoverflow](https://img.shields.io/badge/Stackoverflow-@muhammad_sabeel_ahmed-black.svg?style=flat)](https://stackoverflow.com/users/11824674/muhammad-sabeel-ahmed)
 
-App is currently available on the [Google Play](https://play.google.com/store/apps/details?id=dev.muhammadsabeelahmed.expenses), but you can also download newest APK from [releases page](https://github.com/nominalista/expenses/releases).
+Hit me on Twitter [![Twitter](https://img.shields.io/badge/Twitter-@M_SabeelAhmed-blue.svg?style=flat)](https://twitter.com/m_sabeelahmed)
+
+Hit me on Instagram [![Instagram](https://img.shields.io/badge/Instagram-@muhamamd_sabeel_ahmed-pink.svg?style=flat)](https://www.instagram.com/muhammad_sabeel_ahmed/)
+
+Hit me on Facebook [![Facebook](https://img.shields.io/badge/Facebook-@muhammad_sabeel_ahmed-blue.svg?style=flat)](https://www.facebook.com/muhammadsabeel.ahmed)
+
+Hit me on Pinterest [![Pinterest](https://img.shields.io/badge/Pinterest-@muhammad_sabeel_ahmed-red.svg?style=flat)](https://www.pinterest.com/muhammad_sabeel_ahmed/)
+
 
 # Contact
 
-Expenses is developed and maintained by [nominalista](https://github.com/nominalista). Feel free to reach out to [sabeel04640@gmail.com](mailto://sabeel04640@gmail.com).
+Expenses is developed and maintained by [Muhammad Sabeel Ahmed](https://github.com/sabeel804640). Feel free to reach out to [sabeel04640@gmail.com](mailto://sabeel04640@gmail.com).
 
 # Copyright
 
-    Copyright 2019 Nominalista. All rights reserved.
+    Copyright 2020 Muhammad Sabeel Ahmed. All rights reserved.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

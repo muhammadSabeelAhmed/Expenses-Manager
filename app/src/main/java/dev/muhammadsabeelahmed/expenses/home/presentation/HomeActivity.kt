@@ -15,6 +15,7 @@ import androidx.work.WorkManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import dev.muhammadsabeelahmed.expenses.R
+import dev.muhammadsabeelahmed.expenses.User
 import dev.muhammadsabeelahmed.expenses.common.presentation.BaseActivity
 import dev.muhammadsabeelahmed.expenses.onboarding.OnboardingActivity
 import dev.muhammadsabeelahmed.expenses.settings.presentation.SettingsActivity
@@ -58,9 +59,9 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun setupHeaderLayout() {
-        signUpOrSignInButton.setOnClickListener {
-            runAfterDrawerClose { model.navigateToOnboardingRequested() }
-        }
+//        signUpOrSignInButton.setOnClickListener {
+//            runAfterDrawerClose { model.navigateToOnboardingRequested() }
+//        }
     }
 
     private fun setupItemLayouts() {
@@ -127,18 +128,18 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun configureHeaderLayout(isUserSignedIn: Boolean) {
-        userNameTextView.isVisible = isUserSignedIn
-        userEmailTextView.isVisible = isUserSignedIn
+        userNameTextView.isVisible
+        userEmailTextView.isVisible
 
-        signUpOrSignInButton.isVisible = !isUserSignedIn
+      //  signUpOrSignInButton.isVisible = !isUserSignedIn
     }
 
     private fun configureUserNameTextView(userName: String) {
-        userNameTextView.text = userName
+        userNameTextView.text = User.username
     }
 
     private fun configureUserEmailTextView(userEmail: String) {
-        userEmailTextView.text = userEmail
+        userEmailTextView.text = User.useremail
     }
 
     private fun configureBannerLayout(isBannerEnabled: Boolean) {
