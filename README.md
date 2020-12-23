@@ -18,7 +18,7 @@ Hit me on Pinterest [![Pinterest](https://img.shields.io/badge/Pinterest-@muhamm
 # Contact
 
 Expenses is developed and maintained by [Muhammad Sabeel Ahmed](https://github.com/sabeel804640). Feel free to reach out to [sabeel04640@gmail.com](mailto://sabeel04640@gmail.com).
-
+### MuhammadSabeelAhmed
 # Copyright
 
     Copyright 2020 Muhammad Sabeel Ahmed. All rights reserved.
